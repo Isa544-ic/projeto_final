@@ -1,9 +1,18 @@
+.h3{
+    color: brown;
+}
+
+.menu{
+    background-color: rgb(123, 28, 28);
+    color: #000000;
+}
+
 .slider {
     width: 100%;
-    max-width: 800px;
-    margin: auto;
-    overflow: hidden;
-    position: relative;
+    max-width: 1200px;
+    margin:auto;
+    overflow:visible;
+    position:relative;
 }
 
 .slides {
@@ -23,8 +32,8 @@
 }
 @keyframes slideAnimation {
     0% { transform: translateX(0); }
-    33.33% { transform: translateX(-100%); }
-    66.66% { transform: translateX(-200%); }
+    22.22% { transform: translateX(-10%); }
+    66.66% { transform: translateX(-100%); }
     100% { transform: translateX(0); }
 }
 h2{
@@ -51,7 +60,7 @@ nav ul {
 
 nav ul li{
     position:relative;
-     margin:0 15px;
+    margin:0 15px;
 }
 
 nav ul li .dropdown-content {
@@ -62,10 +71,10 @@ nav ul li .dropdown-content {
     min-width: 160px;
     padding: 0;
 }
-nav ul li a{
+.menu a{
    
     font-family: "Lexend", sans-serif;
-    color: rgb(121, 21, 21);
+    color: rgb(255, 255, 255);
     text-decoration: none;
     font-size: 18px;
     transition: color 0.3s;
@@ -73,8 +82,8 @@ nav ul li a{
     display: block;
 }
 
-nav ul li a:hover {
-    color: #efefef;
+.menu a:hover {
+    color: #000000;
 }
 
 .dropdown {
@@ -88,7 +97,7 @@ nav ul li a:hover {
     
 }
 .dropdown-content a {
-    color: rgb(240, 155, 159);
+    color: rgb(211, 70, 77);
     padding: 10px;
     text-decoration: none;
     display: block;
@@ -106,5 +115,236 @@ body {
     padding: 30;
     font-family: Arial, sans-serif; background-color: #ffffff;
     margin: 20;
-    
 }
+
+.gallery-container {
+    display: flex; /* Ativa o Flexbox */
+    justify-content: space-around; /* Distribui os itens com espaço ao redor */
+    flex-wrap: wrap; /* Permite que os itens quebrem linha se não couberem */ 
+    padding: 10px;
+    width: 98%;
+    margin: auto; /
+    }
+    /* Cada item da galeria */
+    .gallery-item {
+    margin: 5px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 180px; /* Define uma largura fixa para cada item */
+    }
+    /* Estilos para as imagens */
+    .gallery-item img {
+     width: 100%; /* Garante que a imagem preencha todo o espaço disponível */
+    height: auto; /* Mantém a proporção da imagem */
+    }
+    .gallery-item {
+    margin: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 200px; /* Define uma largura fixa para cada item */
+    transition: all .3s;
+    }
+    /* Estilos para as imagens */
+    .gallery-item img {
+    width: 100%; /* Garante que a imagem preencha todo o espaço disponível */
+    height: auto; /* Mantém a proporção da imagem */
+    }
+    
+    .gallery-container:hover .gallery-item{
+    opacity: .5;
+    }
+    .gallery-container .gallery-item:hover {
+    opacity: 1
+    }
+    
+    .gallery-item:hover{
+    transform: translateY(-20px)
+    }
+    /* Estilos para as imagens */
+    .gallery-item img {
+    width: 100%; /* Garante que a imagem preencha todo o espaço disponível */
+    height: auto; /* Mantém a proporção da imagem */
+}
+    
+/* Estilos gerais da página */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    }
+    /* Container da galeria usando Flexbox */
+    .gallery-container2 {
+    display: flex; /* Ativa o Flexbox */
+    justify-content: space-around; /* Distribui os itens com espaço ao redor */
+    flex-wrap: wrap; /* Permite que os itens quebrem linha se não couberem */ padding: 20px;
+    }
+    /* Cada item da galeria */
+    .gallery-item {
+    margin: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 200px; /* Define uma largura fixa para cada item */
+    }
+    /* Estilos para as imagens */
+    .gallery-item img {
+    width: 100%; /* Garante que a imagem preencha todo o espaço disponivel*/
+    height: auto; /* Mantém a proporção da imagem */
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    }
+    /* Container da galeria usando Flexbox */
+    .gallery-container3 {
+    display: flex; /* Ativa o Flexbox */
+    justify-content: space-around; /* Distribui os itens com espaço ao redor */
+    flex-wrap: wrap; /* Permite que os itens quebrem linha se não couberem */ padding: 20px;
+    }
+    /* Cada item da galeria */
+    .gallery-item {
+    margin: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 200px; /* Define uma largura fixa para cada item */
+    }
+    /* Estilos para as imagens */
+    .gallery-item img {
+    width: 100%; /* Garante que a imagem preencha todo o espaço disponivel*/
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+
+/* Estilo geral do footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 40px 0;
+    font-family: Arial, sans-serif;
+    }
+    footer-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    }
+    footer-section {
+    flex-basis: 23%; /* Faz com que as seções ocupem 23%
+    da largura, com espaço para margens */
+    margin-bottom: 20px;
+    }
+    footer-section h4 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #ff6347;
+    }
+    footer-section p, footer-section ul {
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    }
+    footer-section ul {
+    list-style-type: none;
+    }
+    footer-section ul li { 
+        margin-bottom: 10px; 
+    }
+footer-section ul li a { 
+    color: white; 
+    text-decoration: none; 
+    transition: color 0.3s; 
+}
+
+footer-section ul li a:hover { 
+    color: #ff6347; }
+.social-links a {
+display: inline-block; 
+margin-right: 10px; 
+color: white; 
+text-decoration: none; 
+transition: color 0.3s; }
+social-links a:hover { 
+    color: #ff6347; }
+.footer-bottom { 
+    text-align: center; 
+    margin-top: 20px; 
+    padding: 10px 0; 
+    border-top: 1px solid #444; 
+    font-size: 14px;
+}
+.footer-bottom p {
+    margin: 0; 
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px; /* Arredonda os cantos dos cards */
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra para dar um efeito de elevação */
+    flex: 1; /* Permite que os cards cresçam igualmente */
+    max-width: 280px; /* Define uma largura máxima para os cards */
+    }
+    /* Estilo para o título dos cards */
+    
+    /* Container da galeria usando Flexbox */
+    .gallery-container3 {
+    display: flex; /* Ativa o Flexbox */
+    justify-content: space-around; /* Distribui os itens com espaço ao redor */
+    flex-wrap: wrap; /* Permite que os itens quebrem linha se não couberem */ 
+    padding: 10px;
+    width: 98%;
+    margin: auto; /
+    }
+    /* Cada item da galeria */
+    .gallery-item9 {
+    margin: 50px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 180px; /* Define uma largura fixa para cada item */
+    }
+    /* Estilos para as imagens */
+    .gallery-item10 img {
+     width: 100%; /* Garante que a imagem preencha todo o espaço disponível */
+    height: auto; /* Mantém a proporção da imagem */
+    }
+    .gallery-item11 {
+    margin: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 200px; /* Define uma largura fixa para cada item */
+    transition: all .3s;
+    }
+    /* Estilos para as imagens */
+    .gallery-item12 img {
+    width: 100%; /* Garante que a imagem preencha todo o espaço disponível */
+    height: auto; /* Mantém a proporção da imagem */
+    }
+    
+    .gallery-container:hover .gallery-item{
+    opacity: .5;
+    }
+    .gallery-container .gallery-item:hover {
+    opacity: 1
+    }
+    
+    .gallery-item:hover{
+    transform: translateY(-20px)
+    }
+    /* Estilos para as imagens */
+    .gallery-item img {
+    width: 100%; /* Garante que a imagem preencha todo o espaço disponível */
+    height: auto; /* Mantém a proporção da imagem */
+}
+    

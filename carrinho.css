@@ -1,0 +1,197 @@
+nav {
+    background-color: #ffffff;
+    padding: 10px 0;
+    box-decoration-break: 0px 8px 16px 0px rgba(0, 0, 0, 2);
+    z-index: 1;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li{
+    position:relative;
+     margin:0 15px;
+ }
+
+ nav ul li .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    z-index: 1;
+    min-width: 160px;
+    padding: 0;
+    
+}
+nav ul li a{
+   
+    font-family: "Lexend", sans-serif;
+    color: rgb(180, 169, 115);
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+    padding: 10px;
+    display: block;
+}
+
+nav ul li a:hover {
+    color: #78818e;
+}
+
+li .joiasbtn {
+    font-family: "Lexend", sans-serif;
+    color: rgb(180, 169, 115);
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+    padding: 10px;
+    display: block;
+}
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+main {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estiliza a tabela do carrinho */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+/* Estiliza o input de quantidade */
+input.quantidade {
+    width: 50px;
+    padding: 5px;
+    text-align: center;
+}
+
+/* Estiliza o botão de remover */
+button.remover-produto {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button.remover-produto:hover {
+    background-color: #c0392b;
+}
+
+/* Estiliza o total final */
+.total-final {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.total-final h3 {
+    color: #333;
+}
+
+#total-final {
+    color: #e74c3c;
+}
+
+footer {
+    background-color: #f49494;
+    color: rgb(0, 0, 0);
+    padding: 40px 0;
+    font-family: Arial, sans-serif;
+    }
+    footer-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    }
+    footer-section {
+    flex-basis: 23%; /* Faz com que as seções ocupem 23%
+    da largura, com espaço para margens */
+    margin-bottom: 20px;
+    }
+    footer-section h4 {
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #ff6347;
+    }
+    footer-section p, footer-section ul {
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    }
+    footer-section ul {
+    list-style-type: none;
+    }
+    footer-section ul li { 
+        margin-bottom: 10px; 
+    }
+footer-section ul li a { 
+    color: white; 
+    text-decoration: none; 
+    transition: color 0.3s; 
+}
+
+footer-section ul li a:hover { 
+    color: #ff6347; }
+.social-links a {
+display: inline-block; 
+margin-right: 10px; 
+color: white; 
+text-decoration: none; 
+transition: color 0.3s; }
+social-links a:hover { 
+    color: #ff6347; }
+.footer-bottom { 
+    text-align: center; 
+    margin-top: 20px; 
+    padding: 10px 0; 
+    border-top: 1px solid #444; 
+    font-size: 14px;
+}
+.footer-bottom p {
+    margin: 0; 
+}
