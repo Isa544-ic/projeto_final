@@ -22,31 +22,27 @@ function calcularTotalFinal() {
     document.getElementById('total-final').innerText = `R$ ${totalFinal.toFixed(2).replace('.', ',')}`;
 }
 
-// Adiciona eventos para alterar a quantidade e recalcular o total
-const quantidades = document.querySelectorAll('.quantidade');
-
-quantidades.forEach(quantidade => {
-    quantidade.addEventListener('input', function() {
-        const produtoLinha = this.closest('tr'); // Seleciona a linha correspondente
-        atualizarPrecoTotal(produtoLinha); // Atualiza o total do produto
-        calcularTotalFinal(); // Recalcula o total final
-    });
-});
-
 // Função para remover um produto do carrinho
 function removerProduto(produtoLinha) {
     produtoLinha.remove();
     calcularTotalFinal(); // Recalcula o total final após remoção
 }
 
-// Adiciona eventos para remover produtos
-const removerBotoes = document.querySelectorAll('.remover-produto');
+// Delegação de eventos para alterar a quantidade e recalcular o total
+document.body.addEventListener('input', function(event) {
+    if (event.target && event.target.classList.contains('quantidade')) {
+        const produtoLinha = event.target.closest('tr'); // Seleciona a linha correspondente
+        atualizarPrecoTotal(produtoLinha); // Atualiza o total do produto
+        calcularTotalFinal(); // Recalcula o total final
+    }
+});
 
-removerBotoes.forEach(botao => {
-    botao.addEventListener('click', function() {
-        const produtoLinha = this.closest('tr'); // Seleciona a linha correspondente
+// Delegação de eventos para remover produtos
+document.body.addEventListener('click', function(event) {
+    if (event.target && event.target.classList.contains('remover-produto')) {
+        const produtoLinha = event.target.closest('tr'); // Seleciona a linha correspondente
         removerProduto(produtoLinha); // Remove o produto
-    });
+    }
 });
 
 // Calcula o total inicial na página carregada
